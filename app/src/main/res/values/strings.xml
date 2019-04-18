@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">READ 2019</string>
+
+    <string-array name="instansi">
+        <item>DESA GERBOT</item>
+        <item>DESA PODOKOYO</item>
+        <item>DESA KALIPUCANG</item>
+        <item>DESA JATISARI</item>
+        <item>DESA JATIARJO</item>
+        <item>DESA ROMO</item>
+        <item>DESA JARANGAN</item>
+    </string-array>
+</resources>

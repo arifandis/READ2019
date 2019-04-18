@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.RegistrasiActivity"
+    android:background="@color/biru_dongker">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo_wda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/register_menuBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/ic_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/register_labelNamaTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Nama"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/register_namaCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/register_labelNamaTv"
+        app:layout_constraintTop_toBottomOf="@+id/register_labelNamaTv">
+
+        <EditText
+            android:id="@+id/register_namaEt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textCapCharacters"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:textColor="@color/biru_dongker"
+            android:textSize="15sp" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/register_labelInstansiTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Instansi"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_telpCard" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/register_spinnerCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/register_labelInstansiTv"
+        app:layout_constraintTop_toBottomOf="@+id/register_labelInstansiTv">
+
+        <AutoCompleteTextView
+            android:id="@+id/register_instansiACTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:textColor="@color/biru_dongker"
+            android:textSize="15sp" />
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/register_labelNoTelpTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Nomor Telepon"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/register_spinnerCard"
+        app:layout_constraintTop_toBottomOf="@+id/register_namaCard" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/register_telpCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/register_labelNamaTv"
+        app:layout_constraintTop_toBottomOf="@+id/register_labelNoTelpTv">
+
+        <EditText
+            android:id="@+id/register_telpEt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:textColor="@color/biru_dongker"
+            android:textSize="15sp" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/register_labelTTDTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Tanda Tangan"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_spinnerCard" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/register_submitBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/register_labelTTDTv"
+        app:layout_constraintTop_toBottomOf="@+id/register_labelTTDTv">
+
+        <com.github.gcacace.signaturepad.views.SignaturePad
+            android:id="@+id/register_signaturePad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/register_clearSignatureBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:textColor="@color/white"
+        android:background="@color/red"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/register_submitBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/register_submitBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:background="@color/green"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/register_clearSignatureBtn" />
+
+
+</android.support.constraint.ConstraintLayout>

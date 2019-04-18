@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="biru_dongker">#1A263E</color>
+    <color name="light_blue">#436DCC</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="grey">#757575</color>
+
+    <color name="red">#E53935</color>
+    <color name="green">#43A047</color>
+</resources>
